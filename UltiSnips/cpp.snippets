@@ -32,7 +32,7 @@ namespace${1/.+/ /m}${1:`!p snip.rv = snip.basename or "name"`}
 endsnippet
 
 snippet readfile "read file (readF)"
-std::vector<char> v;
+vector<char> v;
 if (FILE *fp = fopen(${1:"filename"}, "r"))
 {
 	char buf[1024];
@@ -43,11 +43,11 @@ if (FILE *fp = fopen(${1:"filename"}, "r"))
 endsnippet
 
 snippet map "std::map (map)"
-std::map<${1:key}, ${2:value}> map$0;
+map<${1:key}, ${2:value}> map$0;
 endsnippet
 
 snippet vector "std::vector (v)"
-std::vector<${1:char}> v$0;
+vector<${1:char}> v$0;
 endsnippet
 
 snippet tp "template <typename ..> (template)"
